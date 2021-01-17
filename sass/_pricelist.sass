@@ -1,0 +1,68 @@
+.catalog
+    display: grid
+    position: relative
+    // height: 100vh
+    width: 100vw
+    background-size: cover
+    &_block
+        overflow: hidden
+        display: grid
+        position: relative
+        padding: 10px
+        display: grid
+        height: 100%
+        width: 100%
+        // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+        // grid-template-rows: repeat(auto-fit, minmax(300px, 1fr))
+        grid-template-columns: repeat(4,[col] 1fr)
+        // grid-template-rows: repeat(4,[row] 1fr)
+        grid-gap: 10px
+        &-item
+            overflow: hidden
+            position: relative
+            display: grid
+            min-height: 350px
+            align-items: flex-end
+            &-text
+                position: relative
+                background: #29262673
+                height: 20%
+                transition: all .3s ease-in
+                bottom: -20%
+            &:hover &-text
+                cursor: pointer
+                background:  #ca202073
+                height: 50%
+                bottom: 0
+            
+                    
+
+        .horizontal
+            grid-column: span 2
+        .vertical
+            grid-row: span 2
+.ph1
+    background: url(../img/catalog/ph1.jpg)
+    background-size: cover
+    background-position-y: 50%
+.ph2
+    background: url(../img/catalog/ph5.jpg)
+    background-size: cover
+    background-position-y: 50%
+.ph3
+    background: url(../img/catalog/ph3.jpg)
+    background-size: cover
+    background-position: 65% 65%
+    // zoom: 2
+.ph4
+    background: url(../img/catalog/ph2.jpg)
+    background-size: cover
+    background-position-y: 50%
+.ph5
+    background: url(../img/catalog/ph4.jpg)
+    background-size: cover
+    background-position-y: 50%
+.ph6
+    background: url(../img/catalog/ph1.jpg)
+    background-size: cover
+    background-position-y: 50%

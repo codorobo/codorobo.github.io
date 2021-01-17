@@ -1,0 +1,39 @@
+.firstscreen
+    position: relative
+    height: 100vh
+    width: 100vw
+    background: url(../img/fons/firstscreen.jpg)
+    background-size: cover
+    &::before
+        content: ""
+        position: absolute
+        height: 100%
+        width: 100%
+        background: #00000038
+        z-index: 10
+    &__block
+        position: relative
+        display: grid
+        height: 100%
+        width: 100%
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        &-item
+            position: relative
+            display: grid
+            align-content: center
+            justify-content: center
+            color: #fff
+            text-align: center
+            h1
+                font-family: UniSansHeavy
+                font-size: 53pt
+                line-height: 1.3
+                text-shadow: 3px 3px 3px #ee4c9b
+                margin: 0px
+            p
+                // background: red
+                // padding: 30px
+                font-family: BickhamScriptTwoRegular
+                font-size: 38pt
+                // box-shadow: 5px 5px 3px black
+                // border-radius: 20px 0px 20px 0px
