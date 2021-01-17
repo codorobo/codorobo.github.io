@@ -24,16 +24,24 @@
             min-height: 350px
             align-items: flex-end
             &-text
+                display: grid
+                align-content: center
+                justify-content: center
                 position: relative
-                background: #29262673
-                height: 20%
+                background: #000000b6
+                opacity: 0
+                height: 100%
                 transition: all .3s ease-in
-                bottom: -20%
-            &:hover &-text
+                border: solid 3px #ee4c9a
+                // bottom: -20%
+            &:hover &-text 
                 cursor: pointer
-                background:  #ca202073
-                height: 50%
-                bottom: 0
+                // background:  #ca202073
+                // height: 50%
+                font-size: 45pt
+                color: #fff
+                opacity: 1
+                text-shadow: 3px 3px 3px #ee4c9ab6
             
                     
 
