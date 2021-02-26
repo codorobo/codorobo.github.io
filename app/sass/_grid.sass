@@ -1,0 +1,349 @@
+.grid
+    display: grid
+
+
+
+.popup
+    position: fixed
+    z-index: 1
+    height: 100vh
+    width: 100vw
+    background: rgba(0,0,0,0.5)
+
+
+// МЕНЮ
+
+.menu
+    grid-template-columns: 1fr .3fr 1fr
+    position: fixed
+    z-index: 10
+    height: 60px
+    width: 100%
+    z-index: 3
+    background: rgba(255,255,255,1)
+    justify-content: center
+    box-shadow: 0px 0px 5px 0px rgba(226,108,200,0.7)        
+    .leftmenu
+        align-content: center
+        justify-content: center
+        height: 60px
+        font-size: 2.4em
+        color: rgba(64,81,86,0.9)
+    .rightmenu
+        align-content: center
+        justify-content: center
+        height: 60px
+        font-size: 1.9em
+        color: rgba(64,81,86,0.9)
+    .images
+        margin: 0 auto
+        width: 90px
+        height: 90px
+        background: #fff
+        border-radius: 33%
+        transform: rotate(45deg)
+        border-bottom: solid 2px rgba(226,108,200,0.4)
+        border-right: solid 2px rgba(226,108,200,0.4)
+        img
+            transform: rotate(-45deg)
+            width: 90px
+    .smallimg
+        display: none
+    .smalllogo
+        display: none
+        
+
+// СТАРТОВАЯ СТРАНИЦА
+
+
+.start
+    position: relative
+    height: 100vh
+    background: white
+    background: url(../img/startfon.jpg) top  no-repeat
+    background-size: cover
+    padding: 100px 5vw 0 15vw
+    color: #fff
+    // &::before
+    //     content: ""
+    //     position: absolute
+    //     height: 100%
+    //     width: 100%
+    //     background: #00000038
+    //     z-index: 10
+    &__text
+        text-align: center
+        align-self: center
+        justify-self: left
+        max-width: 45%
+        font-family: BickhamScriptTwoRegular
+        h1
+            font-family: UniSansHeavy
+            font-size: 53pt
+            line-height: 1.3
+            text-shadow: 3px 3px 3px #ee4c9b
+            margin: 0px
+        p
+            // background: red
+            // padding: 30px
+            font-family: BickhamScriptTwoRegular
+            font-size: 38pt
+            // box-shadow: 5px 5px 3px black
+            // border-radius: 20px 0px 20px 0px
+
+
+// БЛОКИ КАТАЛОГА
+.catalog
+    position: relative
+    grid-template-columns: repeat(12,[col] 1fr)
+    grid-template-rows: repeat(12,[row] 1fr)
+    grid-gap: 10px
+    margin: 10px
+.catalog__item
+    position: relative
+    overflow: hidden
+    min-height: 350px
+    min-width: 50px
+    width: 100%
+    cursor: pointer
+    font-weight: bold
+    &:hover .catalog__item-text
+        background: rgba(226,108,200,0.9)
+        color: #fff
+        transition: all 0.4s ease 0s
+        height: 200px
+        bottom: 0
+        margin: 10px
+        border-radius: 130px 130px 130px 0
+        border: dashed 4px #fff
+        
+    .catalog__item-text
+        position: absolute
+        background: rgba(226,108,200,0.5)
+        color: #000
+        height: 100px
+        width: 100%
+        font-size: 2rem
+        transition: all 0.4s ease-in
+        justify-self: center
+        align-self: center
+        text-align: center
+        align-content: center
+        bottom: 0
+        border: dotted 4px #fff
+        margin: 10px
+        border-radius: 130px 130px 130px 0
+
+.item1
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/kos.jpg) center no-repeat
+    background-size: cover 
+    justify-content: center
+.item2
+    grid-column: span 3
+    grid-row: span 12
+    background: url(../img/spa.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center
+.item3
+    grid-column: span 6
+    grid-row: span 6
+    background: url(../img/mass.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center  
+.item4
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/fiz.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center  
+.item5
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/nog.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center 
+
+.item6
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/uzi.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center  
+
+// НАШИ ПРИЕМУЩЕСТВА
+
+.point
+    padding: 50px 0 50px 0
+    background: #FFFFFF
+    background: linear-gradient(to bottom, #FFFFFF, #FFE4F3,#FFFFFF)
+    min-height: 500px
+
+    
+    .point__text
+        height: 70px
+        align-content: center
+        justify-content: center 
+        text-align: center
+        margin-bottom: 20px
+    .point__items
+        min-width: 300px
+        margin: 0 auto
+        align-items: center
+        justify-items: center
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-gap: 20px
+        &-item
+            max-width: 300px
+            align-items: center
+            justify-items: center
+            cursor: default
+            &:hover  .point__items-item-circle
+                box-shadow: 3px 3px 15px -1px rgba(226,108,200,0.7)
+                transition: all 0.4s ease 0s
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.6)
+            &-circle
+                align-content: center
+                justify-content: center
+                height: 110px
+                width: 110px
+                border-radius: 50%
+                box-shadow: 3px 3px 6px -1px rgba(245,211,73,1)
+                font-size: 3em
+                transition: all 0.4s ease 0s
+                
+
+            &-text
+                text-align: center
+                h1
+                    line-height: 1
+                    padding: 0px
+                    margin: 8px 0 8px 0
+                    font-size: 1.3rem
+                p
+                    line-height: 1
+                    padding: 0px
+                    margin: 10px 0 10px 0
+                    font-size: .95rem
+
+
+
+// ОФФЕР
+
+.offer
+    height: 600px
+    background: url(../img/offer-bg.png) no-repeat
+    background-position: center center
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    &__text
+        justify-self: right
+        padding: 10px
+        min-width: 300px
+        max-width: 650px
+        color: #fff
+        h1
+            line-height: 1
+            font-size: 2.7em
+            font-weight: bold
+            margin-bottom: 10px
+        h2
+            line-height: 1
+            font-size: 1.5em
+            font-weight: normal
+            margin-top: 0px
+        p
+    &__bottom
+        text-align: center
+        font-size: 1.5em
+        padding: 8px
+        border-radius: 25px
+        min-width: 250px
+        max-width: 300px
+        color: rgba(226,108,200,1)
+        background: #fff
+        cursor: pointer
+        transition: all 0.4s ease 0s
+        &:hover
+            color: #fff
+            background: #f14091
+            transition: all 0.4s ease 0s
+
+// ОТЗЫВЫ
+
+.recall
+    max-width: 1280px
+    grid-gap: 10px
+    margin: 0 auto
+    text-align: center
+    align-items: center
+    justify-items: center
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    h1
+        height: 100%
+        line-height: 1
+        padding: 0px
+        margin: 8px 0 8px 0
+        font-size: 1.3rem
+        margin: 10px
+    &__item
+        padding: 0 10px
+        width: 280px
+        background: #f4f4f4
+        align-content: center
+        justify-content: center
+        border-radius: 40px 40px 40px 0
+        transition: all 0.4s ease 0s
+        &:hover
+            box-shadow: 0px 0px 42px -20px rgba(77,77,77,1)
+            transition: all 0.4s ease 0s
+        &:hover .recall__item-photo
+            border: solid 2px rgba(226,108,200,0.7)
+        &:hover .recall__item-name
+            color: rgba(226,108,200,0.7)
+            transition: all 0.4s ease 0s
+        &-photo
+            align-self: center
+            justify-self: center
+            margin: 0 auto
+            height: 140px
+            width: 140px
+            background: #fff
+            border-radius: 50%
+            margin: 20px
+            border: solid 2px rgba(226,108,200,0)
+        &-name
+            font-size: 1.4em
+            font-weight: bold
+        &-recall
+            font-size: .9em
+            padding: 10px 0
+            margin: 10px 0px
+        &-contact
+
+// ФУТЕР
+
+.footer
+    // margin-top: 70px
+    // padding-bottom: 50px
+    padding: 200px 0 50px 0
+    z-index: 0
+    // min-height: 300px
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ff98d1)
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    // text-align: left
+    align-items: center
+    justify-items: center
+
+.gamburger
+    cursor: pointer
+    &:hover
+        color: red
+

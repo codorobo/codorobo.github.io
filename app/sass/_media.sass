@@ -1,0 +1,148 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.start
+		padding: 100px 5vw 0 5vw
+		&__text
+			max-width: 100%
+			h1
+				font-size: 30pt
+			p
+				font-size: 13vw
+				line-height: 1
+				// color: #333
+				font-weight: none
+			img
+				width: 200px
+				margin: 0 auto
+
+	.starttwo
+		padding: 100px 5vw 0 5vw
+		// background-position: 60% -20%
+		&__text
+			max-width: 100%	
+			p
+			font-size: .7em
+			// background: rgba(255,255,255,0.5)
+
+
+
+	.menu
+		.leftmenu,.images
+			display: none
+		.smalllogo,.smallimg
+			display: grid
+			justify-content: center
+			align-content: center
+			img
+				width: 210px
+		.rightmenu
+			justify-content: right
+			padding-right: 30px
+	.catalog
+    	grid-template-columns: 1fr
+    	grid-template-rows: repeat(6, 250px)
+	.item1,.item2,.item3,.item4,.item5,.item6
+		grid-column: span 1
+		grid-row: span 1
+
+	.catalog__item
+		overflow: hidden
+		min-height: 50px
+		min-width: 50px
+
+		cursor: pointer
+		
+		&:hover .catalog__item-text
+			// height: 100%
+			transition: all 0.4s ease 0s
+			// color: #000
+			
+		.catalog__item-text
+			position: absolute
+			transition: all 0.4s ease-in
+			// outline: solid 1px green
+			align-self: center
+			justify-self: center
+			width: 100%
+			min-height: 10px
+			padding: 0px
+	.point
+		.point__items
+			grid-template-columns: repeat(auto-fill, minmax(300px,1fr))
+			// margin: 50px 0 50px 0
+			// grid-column-gap: 40px
+			padding: 0
+			&-item
+				&:hover  .point__items-item-circle
+				&-circle
+					height: 110px
+				&-text
+					h1
+						font-size: 1.34em
+					p
+						font-size: .95em
+	.offer
+		background-position: left left
+		&__text
+
+			h1
+				line-height: 1
+				font-size: 2em
+				font-weight: bold
+				margin-bottom: 20px
+			h2
+				line-height: 1
+				font-size: 1.4em
+				font-weight: normal
+				
+			p
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
