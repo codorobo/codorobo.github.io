@@ -1,9 +1,0 @@
-/node_modules/
-/dist/
-/Maket/
-/q1/
-/.git/
-/**/_backstage
-/**/package-lock.json
-/**/Thumbs.db
-/**/*.DS_Store
