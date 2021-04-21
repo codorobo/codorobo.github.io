@@ -29,6 +29,10 @@
         height: 60px
         font-size: 2.4em
         color: rgba(64,81,86,0.9)
+        cursor: pointer
+        i
+            &:hover
+                color: #fd51c4
     .rightmenu
         align-content: center
         justify-content: center
@@ -44,6 +48,7 @@
         transform: rotate(45deg)
         border-bottom: solid 2px rgba(226,108,200,0.4)
         border-right: solid 2px rgba(226,108,200,0.4)
+        cursor: pointer
         img
             transform: rotate(-45deg)
             width: 90px
@@ -52,7 +57,10 @@
     .smalllogo
         display: none
         
-
+.gamburger
+    cursor: pointer
+    &:hover
+        color: #fd51c4
 // СТАРТОВАЯ СТРАНИЦА
 
 
@@ -330,13 +338,33 @@
             padding: 10px 0
             margin: 10px 0px
         &-contact
+// КАРТА
+.map
+    height: 100vh
+    width: 100vw
+    margin: 150px 0px 20px 0px
+    position: relative
+    &__contact
+        padding: 30px
+        background-color: #ffffffe1
+        position: absolute
+        top: 27%
+        left: 27%
+        border-radius: 20px
+        box-shadow: 0px 0px 15px #fd51c4
+        img
+            margin: 0 auto
+            width: 150px
+
+
+
 
 // ФУТЕР
 
 .footer
     // margin-top: 70px
     // padding-bottom: 50px
-    padding: 200px 0 50px 0
+    padding: 0px 0 50px 0
     z-index: 0
     // min-height: 300px
     background: linear-gradient(to bottom, #ffffff, #ffffff, #ff98d1)
@@ -345,8 +373,5 @@
     align-items: center
     justify-items: center
 
-.gamburger
-    cursor: pointer
-    &:hover
-        color: red
+
 

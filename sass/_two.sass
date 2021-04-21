@@ -3,7 +3,7 @@
     background: white
     background: url(../img/starttwo.jpg) no-repeat
     background-size: cover
-    background-position: 65% 1%
+    background-position: 65% 0%
     padding: 100px 5vw 0 15vw
     &__text
         // text-align: center
@@ -21,3 +21,103 @@
             border-left: solid 5px rgba(255,0,0,0.7)
             color: #333
             text-shadow: 0px 0px 1px rgba(0,0,0,0.41)
+.downmenu
+    background: #FFFFFF
+    background: linear-gradient(to bottom, #FFFFFF, #FFE4F3,#FFFFFF)
+    &__menublock
+
+        padding: 50px 10px
+        display: grid
+        // background: blue
+        margin: 0 auto
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
+        max-width: 1080px
+        // grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 10px
+        &-item
+            // justify-self: center
+            // display: grid
+            height: 300px
+            // width: 300px
+            background: yellow
+        .item_0
+            background: url(../img/mass.jpg) center no-repeat
+            background-size: cover 
+            justify-content: center
+        .item_1
+            background: url(../img/kosmo.jpg) center no-repeat
+            background-size: cover 
+            justify-content: center
+        .item_2
+            background: url(../img/spa.jpg) center no-repeat
+            background-size: cover 
+            justify-content: center
+        .item_3
+            background: url(../img/nogti.jpg) center no-repeat
+            background-size: cover 
+            justify-content: center
+        .item_4
+            background: url(../img/fizio.jpg) center no-repeat
+            background-size: cover 
+            justify-content: center
+        .item_5
+            background: url(../img/uzi.jpg) center no-repeat
+            background-size: cover 
+            justify-content: center
+
+.photogallery
+    padding: 50px 10px
+    display: grid
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
+    grid-gap: 5px
+    max-width: 1280px
+    margin: 0 auto
+    &__item
+        background: red
+        height: 300px
+    .item_0
+        background: url(../img/kosmo.jpg) center no-repeat
+        background-size: cover 
+        justify-content: center
+    .item_1
+        background: url(../img/kosmo.jpg) center no-repeat
+        background-size: cover 
+        justify-content: center
+    .item_2
+        background: url(../img/kosmo.jpg) center no-repeat
+        background-size: cover 
+        justify-content: center
+    .item_3
+        background: url(../img/kosmo.jpg) center no-repeat
+        background-size: cover 
+        justify-content: center
+    .item_4
+        background: url(../img/kosmo.jpg) center no-repeat
+        background-size: cover 
+        justify-content: center
+    .item_5
+        background: url(../img/kosmo.jpg) center no-repeat
+        background-size: cover 
+        justify-content: center
+.price
+    margin: 0 auto
+    max-width: 920px
+    background-color: tomato
+    &__table
+        min-width: 100%
+        border: none
+        border-spacing: 20
+        border-collapse: separate
+        border-radius: 10px
+        &-tr
+            background-color: yellow
+            padding: 20px
+        &-name
+            padding: 10px
+            // background-color: red
+        &-price
+            width: 130px
+            padding: 10px
+            text-align: center
+
+
