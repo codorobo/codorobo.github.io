@@ -21,84 +21,230 @@
             border-left: solid 5px rgba(255,0,0,0.7)
             color: #333
             text-shadow: 0px 0px 1px rgba(0,0,0,0.41)
-.downmenu
-    background: #FFFFFF
-    background: linear-gradient(to bottom, #FFFFFF, #FFE4F3,#FFFFFF)
-    &__menublock
+.catalog__downmenu
+    position: relative
+    grid-template-columns: repeat(12,[col] 1fr)
+    grid-template-rows: repeat(12,[row] 1fr)
+    grid-gap: 10px
+    margin: 10px
+.catalog__downmenu__item
+    position: relative
+    overflow: hidden
+    min-height: 350px
+    min-width: 50px
+    width: 100%
+    cursor: pointer
+    font-weight: bold
+    &:hover .catalog__downmenu__item-text
+        background: rgba(226,108,200,0.9)
+        color: #fff
+        transition: all 0.4s ease 0s
+        height: 120px
+        bottom: 0
+        margin: 10px
+        border-radius: 130px 130px 130px 0
+        border: dashed 4px #fff
+        text-shadow: 1px 1px 1px #000
+        
+    .catalog__downmenu__item-text
+        position: absolute
+        background: rgba(226,108,200,0.5)
+        color: #000
+        height: 100px
+        width: 100%
+        font-size: 2rem
+        transition: all 0.4s ease-in
+        justify-self: center
+        align-self: center
+        text-align: center
+        align-content: center
+        bottom: 0
+        border: dotted 4px #fff 
+        margin: 10px
+        border-radius: 130px 130px 130px 0
 
-        padding: 50px 10px
-        display: grid
-        // background: blue
-        margin: 0 auto
-        grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
-        max-width: 1080px
-        // grid-template-columns: 1fr 1fr 1fr
-        grid-gap: 10px
-        &-item
-            // justify-self: center
-            // display: grid
-            height: 300px
-            // width: 300px
-            background: yellow
-        .item_0
-            background: url(../img/mass.jpg) center no-repeat
-            background-size: cover 
-            justify-content: center
-        .item_1
-            background: url(../img/kosmo.jpg) center no-repeat
-            background-size: cover 
-            justify-content: center
-        .item_2
-            background: url(../img/spa.jpg) center no-repeat
-            background-size: cover 
-            justify-content: center
-        .item_3
-            background: url(../img/nogti.jpg) center no-repeat
-            background-size: cover 
-            justify-content: center
-        .item_4
-            background: url(../img/fizio.jpg) center no-repeat
-            background-size: cover 
-            justify-content: center
-        .item_5
-            background: url(../img/uzi.jpg) center no-repeat
-            background-size: cover 
-            justify-content: center
+.item1__downmenu
+    grid-column: span 3
+    grid-row: span 12
+    background: url(../img/kosmo.jpg) center no-repeat
+    background-size: cover 
+    justify-content: center
+.item2__downmenu
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/mass.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center
+    background-position-y: 90%
+.item3__downmenu
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/spa.jpg) center no-repeat
+    background-size: cover
+    background-position-y: 90%
+    align-content: center
+    justify-content: center  
+.item4__downmenu
+    grid-column: span 3
+    grid-row: span 12
+    background: url(../img/fizio.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center  
+.item5__downmenu
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/nogti.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center 
 
-.photogallery
-    padding: 50px 10px
-    display: grid
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
-    grid-gap: 5px
-    max-width: 1280px
-    margin: 0 auto
-    &__item
-        background: red
-        height: 300px
-    .item_0
-        background: url(../img/kosmo.jpg) center no-repeat
-        background-size: cover 
-        justify-content: center
-    .item_1
-        background: url(../img/kosmo.jpg) center no-repeat
-        background-size: cover 
-        justify-content: center
-    .item_2
-        background: url(../img/kosmo.jpg) center no-repeat
-        background-size: cover 
-        justify-content: center
-    .item_3
-        background: url(../img/kosmo.jpg) center no-repeat
-        background-size: cover 
-        justify-content: center
-    .item_4
-        background: url(../img/kosmo.jpg) center no-repeat
-        background-size: cover 
-        justify-content: center
-    .item_5
-        background: url(../img/kosmo.jpg) center no-repeat
-        background-size: cover 
-        justify-content: center
+.item6__downmenu
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/uzi.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center  
+
+
+
+.catalog__phgl
+    position: relative
+    grid-template-columns: repeat(12,[col] 1fr)
+    grid-template-rows: repeat(12,[row] 1fr)
+    grid-gap: 10px
+    margin: 10px
+.catalog__phgl__item
+    position: relative
+    overflow: hidden
+    min-height: 350px
+    min-width: 50px
+    width: 100%
+    cursor: pointer
+    font-weight: bold
+    &:hover .catalog__phgl__item-text
+        background: rgba(226,108,200,0.9)
+        color: #fff
+        transition: all 0.4s ease 0s
+        height: 120px
+        bottom: 0
+        margin: 10px
+        border-radius: 130px 130px 130px 0
+        border: dashed 4px #fff
+        text-shadow: 1px 1px 1px #000
+        
+    .catalog__phgl__item-text
+        position: absolute
+        background: rgba(226,108,200,0.5)
+        color: #000
+        height: 100px
+        width: 100%
+        font-size: 2rem
+        transition: all 0.4s ease-in
+        justify-self: center
+        align-self: center
+        text-align: center
+        align-content: center
+        bottom: 0
+        border: dotted 4px #fff 
+        margin: 10px
+        border-radius: 130px 130px 130px 0
+
+.item1__phgl
+    grid-column: span 3
+    grid-row: span 12
+    background: url(../img/kosmo.jpg) center no-repeat
+    background-size: cover 
+    justify-content: center
+.item2__phgl
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/mass.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center
+    background-position-y: 90%
+.item3__phgl
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/spa.jpg) center no-repeat
+    background-size: cover
+    background-position-y: 90%
+    align-content: center
+    justify-content: center  
+.item4__phgl
+    grid-column: span 3
+    grid-row: span 12
+    background: url(../img/fizio.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center  
+.item5__phgl
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/nogti.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center 
+
+.item6__phgl
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/uzi.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center 
+
+.item7__phgl
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/kosmo.jpg) center no-repeat
+    background-size: cover 
+    justify-content: center
+.item8__phgl
+    grid-column: span 3
+    grid-row: span 12
+    background: url(../img/mass.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center
+    background-position-y: 90%
+.item9__phgl
+    grid-column: span 3
+    grid-row: span 12
+    background: url(../img/spa.jpg) center no-repeat
+    background-size: cover
+    background-position-y: 90%
+    align-content: center
+    justify-content: center  
+.item10__phgl
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/fizio.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center  
+.item11__phgl
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/nogti.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center 
+
+.item12__phgl
+    grid-column: span 3
+    grid-row: span 6
+    background: url(../img/uzi.jpg) center no-repeat
+    background-size: cover
+    align-content: center
+    justify-content: center  
+
+
+
+
 .price
     margin: 0 auto
     max-width: 920px

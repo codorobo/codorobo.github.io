@@ -86,6 +86,67 @@
 			width: 100%
 			min-height: 10px
 			padding: 0px
+
+
+
+	.catalog__downmenu
+    	grid-template-columns: 1fr
+    	grid-template-rows: repeat(6, 250px)
+	.item1__downmenu,.item2__downmenu,.item3__downmenu,.item4__downmenu,.item5__downmenu,.item6__downmenu
+		grid-column: span 1
+		grid-row: span 1
+
+	.catalog__downmenu__item
+		overflow: hidden
+		min-height: 50px
+		min-width: 50px
+
+		cursor: pointer
+		
+		&:hover .catalog__downmenu__item-text
+			// height: 100%
+			transition: all 0.4s ease 0s
+			// color: #000
+			
+		.catalog__downmenu__item-text
+			position: absolute
+			transition: all 0.4s ease-in
+			// outline: solid 1px green
+			align-self: center
+			justify-self: center
+			width: 100%
+			min-height: 10px
+			padding: 0px
+
+	.catalog__phgl
+    	grid-template-columns: 1fr
+    	grid-template-rows: repeat(6, 250px)
+	.item1__phgl,.item2__phgl,.item3__phgl,.item4__phgl,.item5__phgl,.item6__phgl,.item7__phgl,.item8__phgl,.item9__phgl,.item10__phgl,.item11__phgl,.item12__phgl
+		grid-column: span 1
+		grid-row: span 1
+
+	.catalog__phgl__item
+		overflow: hidden
+		min-height: 50px
+		min-width: 50px
+
+		cursor: pointer
+		
+		&:hover .catalog__phgl__item-text
+			// height: 100%
+			transition: all 0.4s ease 0s
+			// color: #000
+			
+		.catalog__phgl__item-text
+			position: absolute
+			transition: all 0.4s ease-in
+			// outline: solid 1px green
+			align-self: center
+			justify-self: center
+			width: 100%
+			min-height: 10px
+			padding: 0px
+
 	.point
 		.point__items
 			grid-template-columns: repeat(auto-fill, minmax(300px,1fr))
