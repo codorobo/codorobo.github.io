@@ -1,0 +1,44 @@
+// ФОН
+.b-popup
+    width: 100%
+    min-height: 100%
+    background-color: #fd51c4
+    overflow: hidden
+    position: fixed
+    top: 0px
+    // animation: backInDown
+    // animation-duration: 1.5s
+    z-index: 100
+
+    // СОДЕРЖИМОЕ
+.b-popup .b-popup-content
+    margin: 40px auto 0px auto
+    width: 320px
+    // height: 40px
+    // padding: 70px
+    // background-color: #c5c5c5
+    border-radius: 5px
+    // box-shadow: 0px 0px 10px #000
+    text-align: center
+    cursor: pointer
+    &-items
+        font-size: 30px
+        font-family: UniSansHeavy
+        transition: all 0.4s ease 0s
+        color: #fff
+        text-shadow: 1px 1px 3px #777
+        &:hover
+            background: red
+            // color: #333
+            // font-size: 42px
+            // text-shadow: 2px 2px 4px #fd51c4
+.close
+    padding: 10px 0px
+    color: red
+    font-size: 50px
+    cursor: pointer
+    margin: 0 auto
+    transition: all 0.4s ease 0s
+    &:hover
+       font-size: 60px
+       text-shadow: 2px 2px 4px #fff

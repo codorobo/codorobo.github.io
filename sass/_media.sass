@@ -19,6 +19,8 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.map__contact
+		display: none
 	.start
 		padding: 100px 5vw 0 5vw
 		&__text
@@ -120,8 +122,11 @@
 
 	.catalog__phgl
     	grid-template-columns: 1fr
-    	grid-template-rows: repeat(6, 250px)
-	.item1__phgl,.item2__phgl,.item3__phgl,.item4__phgl,.item5__phgl,.item6__phgl,.item7__phgl,.item8__phgl,.item9__phgl,.item10__phgl,.item11__phgl,.item12__phgl
+    	grid-template-rows: repeat(12, 250px)
+	.item1__phgl,.item2__phgl,.item3__phgl,
+	.item4__phgl,.item5__phgl,.item6__phgl,
+	.item7__phgl,.item8__phgl,.item9__phgl,
+	.item10__phgl,.item11__phgl,.item12__phgl
 		grid-column: span 1
 		grid-row: span 1
 
